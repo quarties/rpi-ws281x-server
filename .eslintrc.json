@@ -1,0 +1,42 @@
+{
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:jsdoc/recommended",
+    "plugin:promise/recommended"
+  ],
+  "plugins": ["node", "prettier", "jest", "jsdoc", "promise"],
+  "rules": {
+    "node/no-unsupported-features/es-syntax": ["error", {
+      "version": ">=11.15.0",
+      "ignores": ["modules"]
+    }]
+  },
+  "overrides": [{
+    "files": ["*.spec.js", "*.test.js"],
+    "rules": {
+      "node/no-unpublished-import": "off",
+      "node/no-extraneous-import": "off"
+    }
+  }],
+  "settings": {
+    "ecmascript": 6,
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      }
+    }
+  }
+}
