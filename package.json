@@ -7,7 +7,7 @@
     "start": "nodemon -r esm src/index.js --env=development",
     "build": "npm i --no-save rpi-ws281x@^1.0.34 && npm run build-dev",
     "build-dev": "parcel build src/index.js --out-file rpi-ws281x-server.js --target=node --bundle-node-modules --no-source-maps",
-    "test": "jest -c jest.config.js",
+    "test": "jest -c .jest.config.json",
     "lint": "eslint src"
   },
   "repository": {
