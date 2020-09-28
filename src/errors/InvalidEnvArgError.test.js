@@ -1,6 +1,6 @@
 import { InvalidEnvArgError } from './InvalidEnvArgError';
 import { ArgsError } from './ArgsError';
-import { ENV } from '../enums/env';
+import { ENV_ENUM } from '../enums';
 
 describe('errors > InvalidEnvArgError', () => {
     it('should call', () => {
@@ -8,7 +8,7 @@ describe('errors > InvalidEnvArgError', () => {
             ArgsError,
             'env',
             'staging',
-            ENV.getAll()
+            ENV_ENUM.getAll()
         );
     });
 });

@@ -1,12 +1,12 @@
-import { ENV } from './env';
+import { ENV_ENUM } from './env';
 
 describe('enums > env', () => {
     it('getAll | should return all envs', () => {
-        expect(ENV.getAll()).toEqual([ENV.DEV, ENV.PROD]);
+        expect(ENV_ENUM.getAll()).toEqual([ENV_ENUM.DEV, ENV_ENUM.PROD]);
     });
 
     it('isValid | shoudl return tru for valid env', () => {
-        expect(ENV.isValid('development')).toBeTruthy();
-        expect(ENV.isValid('invalid')).toBeFalsy();
+        expect(ENV_ENUM.isValid('development')).toBeTruthy();
+        expect(ENV_ENUM.isValid('invalid')).toBeFalsy();
     });
 });
