@@ -1,6 +1,6 @@
 {
     "APP_NAME": "rpi-ws281x-server",
-    "LEDS": 10
+    "LEDS": 10,
     "DMA": 10,
     "BRIGHTNESS": 255,
     "GPIO": 18,
