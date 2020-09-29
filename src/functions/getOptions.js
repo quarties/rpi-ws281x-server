@@ -4,7 +4,7 @@ import { resolve as resolvePath } from 'path';
 import { validateArgs } from './validateArgs';
 
 /**
- * @returns {{env: string, config: object}} Object containing command line args
+ * @returns {{env: string, config: object.<string, *>}} Object containing command line args
  */
 export const getOptions = () => {
     const optionDefinitions = [

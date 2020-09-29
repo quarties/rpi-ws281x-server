@@ -1,4 +1,6 @@
 {
+    "HOST": "127.0.0.1",
+    "PORT": 8080,
     "APP_NAME": "rpi-ws281x-server",
     "LEDS": 10,
     "DMA": 10,
